@@ -20,7 +20,13 @@ class MainApp(App):
         )
         main_layout.add_widget(self.solution)
 
-    
+        buttons = [
+            ["C", "^2", "%", "/"],
+            ["7", "8", "9", "*"],
+            ["4", "5", "6", "-"],
+            ["1", "2", "3", "+"],
+            ["+/-", "0", ".", "="],
+        ]
 
         for row in buttons:
             h_layout = BoxLayout()
